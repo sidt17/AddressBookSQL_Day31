@@ -33,3 +33,7 @@ where FirstName='Rohit'
 --UC5 Delete person using first name
 delete from AddressBook
 where FirstName = 'Sam'
+
+--UC6 Ability to retrieve person belonging to a city or state 
+select * from AddressBook
+where State= 'MP' or State = 'Rajasthan' 
