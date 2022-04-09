@@ -25,3 +25,7 @@ insert into AddressBook values(2,'Amit','Kumawat','B nagar','Jaipur','Rajasthan'
 insert into AddressBook values(3,'Sam','Khan','xy road','Bhopal','MP',434406,9923877223,'Sam@gmail.com');
 insert into AddressBook values(4,'Atul','Anjana','DE block','Chennai','Tamil Nadu',422406,9988672234,'niAtulkita@gmail.com');
 insert into AddressBook values(5,'Rishabh','Patel',' Mira Road','Dehradun','Uttarakhand',455406,9448772234,'Rishabh@gmail.com');
+
+--UC4 Edit existing contact using name.
+update AddressBook set FirstName = 'Anurag' , LastName = 'Khashyap', EmailId = 'Anurag@gmail.com' 
+where FirstName='Rohit'
