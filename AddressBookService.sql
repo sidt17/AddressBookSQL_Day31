@@ -37,3 +37,7 @@ where FirstName = 'Sam'
 --UC6 Ability to retrieve person belonging to a city or state 
 select * from AddressBook
 where State= 'MP' or State = 'Rajasthan' 
+
+--UC7 Count size of addressbook by city and state
+select count(City) as TotalCity from AddressBook;
+select count(State) as TotalState from AddressBook;   
