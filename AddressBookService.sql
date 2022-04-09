@@ -29,3 +29,7 @@ insert into AddressBook values(5,'Rishabh','Patel',' Mira Road','Dehradun','Utta
 --UC4 Edit existing contact using name.
 update AddressBook set FirstName = 'Anurag' , LastName = 'Khashyap', EmailId = 'Anurag@gmail.com' 
 where FirstName='Rohit'
+
+--UC5 Delete person using first name
+delete from AddressBook
+where FirstName = 'Sam'
