@@ -75,4 +75,5 @@ where Id = 2;
 
 select * from AddressBook
 
-
+--UC10 Getting number of contact persons for each ContactType
+select Contacttype, count(Contacttype) as NumberOfContacts from AddressBook group by Contacttype;
