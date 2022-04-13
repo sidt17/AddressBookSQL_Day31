@@ -12,8 +12,8 @@ LastName varchar(255),
 Address varchar(300),
 City varchar(355),
 State varchar(300),
-ZipCode int ,
-PhoneNo bigint,
+ZipCode int,
+PhoneNo varchar(255),
 EmailId varchar(255)
 )
 
@@ -51,3 +51,28 @@ insert into AddressBook values(5,'Rishabh','Patel',' Mira Road','Dehradun','Utta
 
 select * from AddressBook  order by FirstName asc;	--ascending
 select * from AddressBook  order by FirstName desc; --descending
+
+
+--UC9 Ability to identify each Address Book with name and Type.
+alter table AddressBook
+add Contacttype varchar(15);
+
+
+
+
+update AddressBook
+set Contacttype = 'Friend'
+where Id = 3 or Id=5; 
+
+update AddressBook
+set Contacttype = 'Family'
+where Id = 1 or Id=4;
+
+update AddressBook
+set Contacttype = 'Profession'
+where Id = 2;
+ 
+
+select * from AddressBook
+
+
