@@ -77,3 +77,7 @@ select * from AddressBook
 
 --UC10 Getting number of contact persons for each ContactType
 select Contacttype, count(Contacttype) as NumberOfContacts from AddressBook group by Contacttype;
+
+--UC11 Ability to add person to both Friend and Family
+insert into AddressBook values(6,'Shashi', 'Yadav','Nehru Nagar','Mumbai', 'Maharashtra', 656566,9944556633, 'Shashi@gmail.com','Family');
+insert into AddressBook values(7,'Priyanka', 'Singh','ABC Nagar','Chandigarh', 'Punjab', 998345,9934366644, 'Priyanka@gmail.com','Friend');
